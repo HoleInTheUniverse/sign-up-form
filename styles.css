@@ -1,0 +1,60 @@
+:root {
+    --form-default-padding: 24px;
+    --general-default-padding: 8px;
+    --general-default-margin: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.logo-side {
+    background: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") 
+    no-repeat;
+    background-size: cover;
+    
+    flex: 3;
+    max-width: 600px;
+}
+
+.logo-side > span {
+    position: absolute;
+    bottom: var(--general-default-margin);
+    left: 12px;
+}
+
+.logo-side > span,  .logo-side > span a {    
+    color: white;
+}
+
+.logo-wrapper {
+    margin: 180px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--general-default-padding);
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {    
+    width: 100px;
+    height: 125px;
+}
+
+.logo-wrapper > span {
+    font-size: 72px;
+    color: white;
+}
+
+.form {
+    flex: auto;
+    padding: 0px var(--form-default-padding);
+}
