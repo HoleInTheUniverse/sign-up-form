@@ -24,10 +24,29 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form-main">
-
+                <form action="/submit" method="post" id="registration-form">
+                    <div class="form-row">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="user_email">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="text" name="user_phone" id="phone_number">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="user_password" id="password">
+                        <label for="password_confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="user_password_confirm" id="password_confirm">
+                    </div>
+                </form>
             </div>
             <div class="form-footer">
-
+                <button type="submit" form="registration-form">Create Account</button>
             </div>
         </div>
     </div>

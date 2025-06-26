@@ -30,10 +30,6 @@
 }
 
 .logo-side > span {
-    /*position: absolute;
-    bottom: var(--general-default-margin);
-    left: 12px;*/
-
     max-height: 32px;
     margin-bottom: var(--general-default-margin);
 }
