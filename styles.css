@@ -1,5 +1,8 @@
 :root {
     --form-default-padding: 24px;
+    --form-default-margin: 48px;
+    --form-background-color: rgb(243, 243, 243);
+
     --general-default-padding: 8px;
     --general-default-margin: 8px;
 }
@@ -20,7 +23,7 @@
     no-repeat;
     background-size: cover;
     
-    flex: 1;    
+    flex: auto;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,5 +69,29 @@
 
 .form {
     flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     padding: 0px var(--form-default-padding);
+
+    background-color: var(--form-background-color)
+}
+
+.form > div {
+    flex: auto;
+}
+
+.form-header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header p {
+    margin-bottom: var(--form-default-margin);
 }
