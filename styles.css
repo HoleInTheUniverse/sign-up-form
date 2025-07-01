@@ -143,3 +143,19 @@ form label {
     border: 1px solid #497dee;
     box-shadow: 3px 3px 5px -3px #333;
 }
+
+.form-footer {
+    margin-top: var(--form-default-margin);
+}
+
+.form-footer button {
+    width: 220px;
+    height: 48px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #596D48;
+    font-size: 1.25rem;
+    color: white;
+}
